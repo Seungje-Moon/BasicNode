@@ -10,6 +10,10 @@ const userSchema = mongoose.Schema({
         trim: true,
         unique: 1   // 똑같은 이메일은 쓰지 못하게
     },
+    password: {
+        type: String,
+        minlength: 5
+    },
     lastname: {
         type: String,
         maxlength: 50
